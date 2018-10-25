@@ -13,6 +13,7 @@
 		C96BA10B2180FE4000E0144A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96BA1092180FE4000E0144A /* Main.storyboard */; };
 		C96BA10D2180FE4100E0144A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96BA10C2180FE4100E0144A /* Assets.xcassets */; };
 		C96BA1102180FE4100E0144A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */; };
+		C96BA11A2182372800E0144A /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1192182372800E0144A /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C96BA10C2180FE4100E0144A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96BA10F2180FE4100E0144A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96BA1112180FE4100E0144A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96BA1192182372800E0144A /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		DB329344903F13AB1B1C2A13 /* Pods_Tempest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				C96BA10C2180FE4100E0144A /* Assets.xcassets */,
 				C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */,
 				C96BA1112180FE4100E0144A /* Info.plist */,
+				C96BA1192182372800E0144A /* APIKeys.swift */,
 			);
 			path = Tempest;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96BA11A2182372800E0144A /* APIKeys.swift in Sources */,
 				C96BA1082180FE4000E0144A /* ViewController.swift in Sources */,
 				C96BA1062180FE4000E0144A /* AppDelegate.swift in Sources */,
 			);
@@ -359,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.interaptskills.Tempest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.interaptskills.Tempest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
