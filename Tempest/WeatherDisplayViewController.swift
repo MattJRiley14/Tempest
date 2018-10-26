@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WeatherDisplayViewController.swift
 //  Tempest
 //
 //  Created by Matthew Riley on 10/24/18.
@@ -11,13 +11,21 @@ import Alamofire
 import SwiftyJSON
 
 
-class ViewController: UIViewController {
+class WeatherDisplayViewController: UIViewController {
     
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var currentTemperatureLabel: UILabel!
+    @IBOutlet weak var highTemperatureLabel: UILabel!
+    @IBOutlet weak var lowTemperatureLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //When the screen first loads, set the default values for the UI
+        setupDefaultUI()
         
         let apiKeys = APIKeys()
         
@@ -56,6 +64,15 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    //This function will give the UI some default values whenever we first load the app...
+    func setupDefaultUI() {
+        locationLabel.text = "Wakanda, Africa"
+        iconLabel.text = "🌍"
+        currentTemperatureLabel.text = "Enter a location"
+        highTemperatureLabel.text = "Black"
+        lowTemperatureLabel.text = "Panther"
     }
 }
 

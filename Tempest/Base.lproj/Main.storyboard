@@ -12,7 +12,7 @@
         <!--Tempest-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tempest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherDisplayViewController" customModule="Tempest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="currentTemperatureLabel" destination="seA-nn-pkQ" id="feE-c2-aNx"/>
+                        <outlet property="highTemperatureLabel" destination="j2Y-zU-peN" id="N5g-x6-NkO"/>
+                        <outlet property="iconLabel" destination="OS4-3J-HRY" id="hxI-le-Gbb"/>
+                        <outlet property="locationLabel" destination="D6m-p5-CBT" id="wTo-IH-kG8"/>
+                        <outlet property="lowTemperatureLabel" destination="1h5-pr-gw4" id="Eyj-XP-b6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +107,7 @@
         <!--Change Location-->
         <scene sceneID="L1E-VS-RVL">
             <objects>
-                <viewController title="Change Location" id="NHs-g5-2Ke" sceneMemberID="viewController">
+                <viewController title="Change Location" id="NHs-g5-2Ke" customClass="LocationSelectorViewController" customModule="Tempest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oef-IB-SHx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,6 +125,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eMq-T9-QUA"/>
                     </view>
+                    <connections>
+                        <outlet property="locationSearchBar" destination="Y4w-e9-ePI" id="WSR-7d-LXt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqo-U8-dvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

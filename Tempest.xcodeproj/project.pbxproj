@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		98B6FE1B6670C9CEE5F168C0 /* Pods_Tempest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB329344903F13AB1B1C2A13 /* Pods_Tempest.framework */; };
 		C96BA1062180FE4000E0144A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1052180FE4000E0144A /* AppDelegate.swift */; };
-		C96BA1082180FE4000E0144A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1072180FE4000E0144A /* ViewController.swift */; };
+		C96BA1082180FE4000E0144A /* WeatherDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1072180FE4000E0144A /* WeatherDisplayViewController.swift */; };
 		C96BA10B2180FE4000E0144A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96BA1092180FE4000E0144A /* Main.storyboard */; };
 		C96BA10D2180FE4100E0144A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96BA10C2180FE4100E0144A /* Assets.xcassets */; };
 		C96BA1102180FE4100E0144A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */; };
 		C96BA11A2182372800E0144A /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1192182372800E0144A /* APIKeys.swift */; };
+		C96BA13C218388C000E0144A /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA13B218388C000E0144A /* LocationSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +22,13 @@
 		7FE02334B976C48DF77386A7 /* Pods-Tempest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempest/Pods-Tempest.release.xcconfig"; sourceTree = "<group>"; };
 		C96BA1022180FE4000E0144A /* Tempest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96BA1052180FE4000E0144A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C96BA1072180FE4000E0144A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C96BA1072180FE4000E0144A /* WeatherDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDisplayViewController.swift; sourceTree = "<group>"; };
 		C96BA10A2180FE4000E0144A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C96BA10C2180FE4100E0144A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96BA10F2180FE4100E0144A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96BA1112180FE4100E0144A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96BA1192182372800E0144A /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		C96BA13B218388C000E0144A /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
 		DB329344903F13AB1B1C2A13 /* Pods_Tempest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,12 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				C96BA1052180FE4000E0144A /* AppDelegate.swift */,
-				C96BA1072180FE4000E0144A /* ViewController.swift */,
+				C96BA1072180FE4000E0144A /* WeatherDisplayViewController.swift */,
 				C96BA1092180FE4000E0144A /* Main.storyboard */,
 				C96BA10C2180FE4100E0144A /* Assets.xcassets */,
 				C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */,
 				C96BA1112180FE4100E0144A /* Info.plist */,
 				C96BA1192182372800E0144A /* APIKeys.swift */,
+				C96BA13B218388C000E0144A /* LocationSelectorViewController.swift */,
 			);
 			path = Tempest;
 			sourceTree = "<group>";
@@ -205,8 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96BA13C218388C000E0144A /* LocationSelectorViewController.swift in Sources */,
 				C96BA11A2182372800E0144A /* APIKeys.swift in Sources */,
-				C96BA1082180FE4000E0144A /* ViewController.swift in Sources */,
+				C96BA1082180FE4000E0144A /* WeatherDisplayViewController.swift in Sources */,
 				C96BA1062180FE4000E0144A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
