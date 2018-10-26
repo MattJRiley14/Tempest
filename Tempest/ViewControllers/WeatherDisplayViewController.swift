@@ -24,6 +24,12 @@ class WeatherDisplayViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let weatherData = WeatherData(temperature: 50.0, highTemperature: 60.0, lowTemperature: 40.0, condition: .fog)
+        print(weatherData.temperature)
+        print(weatherData.highTemperature)
+        print(weatherData.lowTemperature)
+        print(weatherData.condition)
+        
         //When the screen first loads, set the default values for the UI
         setupDefaultUI()
         
