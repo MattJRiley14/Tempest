@@ -17,6 +17,7 @@
 		C96BA13C218388C000E0144A /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA13B218388C000E0144A /* LocationSelectorViewController.swift */; };
 		C96BA14421838FC600E0144A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA14321838FC600E0144A /* WeatherData.swift */; };
 		C96BA14621838FDB00E0144A /* GeocodingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA14521838FDB00E0144A /* GeocodingData.swift */; };
+		C96BA1482188DE2400E0144A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA1472188DE2400E0144A /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C96BA13B218388C000E0144A /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
 		C96BA14321838FC600E0144A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		C96BA14521838FDB00E0144A /* GeocodingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingData.swift; sourceTree = "<group>"; };
+		C96BA1472188DE2400E0144A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		DB329344903F13AB1B1C2A13 /* Pods_Tempest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,8 +93,8 @@
 		C96BA13F21838EB200E0144A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */,
 				C96BA1092180FE4000E0144A /* Main.storyboard */,
+				C96BA10E2180FE4100E0144A /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C96BA1192182372800E0144A /* APIKeys.swift */,
+				C96BA1472188DE2400E0144A /* APIManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C96BA14621838FDB00E0144A /* GeocodingData.swift in Sources */,
 				C96BA1082180FE4000E0144A /* WeatherDisplayViewController.swift in Sources */,
 				C96BA1062180FE4000E0144A /* AppDelegate.swift in Sources */,
+				C96BA1482188DE2400E0144A /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

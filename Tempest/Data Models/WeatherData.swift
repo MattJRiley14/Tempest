@@ -92,7 +92,7 @@ class WeatherData {
             return nil
         }
         
-        guard let conditionString = json[WeatherDataKeys.currently.rawValue][WeatherDataKeys.icon.rawValue][WeatherDataKeys.icon.rawValue].string else {
+        guard let conditionString = json[WeatherDataKeys.currently.rawValue][WeatherDataKeys.icon.rawValue].string else {
             return nil
         }
         
