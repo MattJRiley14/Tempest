@@ -65,14 +65,14 @@ class WeatherData {
     }
     
     //MARK:- Properties
-    let temperature: Double
-    let highTemperature: Double
-    let lowTemperature: Double
+    let temperature: Int
+    let highTemperature: Int
+    let lowTemperature: Int
     let condition: Condition
     
     //MARK:- Methods
     
-    init(temperature: Double, highTemperature: Double, lowTemperature: Double, condition: Condition) {
+    init(temperature: Int, highTemperature: Int, lowTemperature: Int, condition: Condition) {
         self.temperature = temperature
         self.highTemperature = highTemperature
         self.lowTemperature = lowTemperature
@@ -102,7 +102,7 @@ class WeatherData {
         }
         
         //Since we were able to pull all the data we needed from the JSON, we are going to make a new instance of the WeatherData class, so call the other initializer
-        self.init(temperature: temperature, highTemperature: highTemperature, lowTemperature: lowTemperature, condition: condition)
+        self.init(temperature: Int(temperature), highTemperature: Int(highTemperature), lowTemperature: Int(lowTemperature), condition: condition)
     }
 }
 
